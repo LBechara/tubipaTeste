@@ -13,7 +13,7 @@ public class EspadachimBuilder extends PersonagemBuilder{
 		totalEspadachins++;
 	}
 	
-	public static int gettotalEspadachins() {
+	public static int getTotalEspadachins() {
 		return totalEspadachins;
 	}
 	

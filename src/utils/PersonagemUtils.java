@@ -19,7 +19,7 @@ public class PersonagemUtils {
 	}
 	
 	public static void acresceBonus(Personagem personagem, int multiplicador) {
-		personagem.setVida(personagem.getVida() + (multiplicador * personagem.getEspecs().getVida()));
-		personagem.setMana(personagem.getMana() + (multiplicador * personagem.getEspecs().getMana()));
+		personagem.setVida(personagem.getVida() + (multiplicador * personagem.getEspecs().getBonusVida()));
+		personagem.setMana(personagem.getMana() + (multiplicador * personagem.getEspecs().getBonusMana()));
 	}
 }

@@ -2,6 +2,7 @@ package tubipaTeste;
 
 import builders.EspadachimBuilder;
 import builders.MongeBuilder;
+import directors.InteracoesDirector;
 import directors.PersonagemDirector;
 import entities.Personagem;
 
@@ -29,8 +30,8 @@ public class TestJogo {
 		
 		System.out.println();
 		
-		banana.ganhaExp(499);
-		tremax.ganhaExp(501);
+		InteracoesDirector.ganhaExp(banana.getPersonagem(), 499);
+		InteracoesDirector.ganhaExp(tremax.getPersonagem(), 501);
 		
 		System.out.println();
 		

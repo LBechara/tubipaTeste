@@ -1,29 +1,41 @@
 package enums;
 
 public enum PersonagemEspecs {
-	MONGE("Monge", 20, 25),
-	ESPADACHIM("Espadachim", 30, 15);
+	MONGE("Monge", 20, 25, 5, 2),
+	ESPADACHIM("Espadachim", 30, 15, 5, 2);
 	
 	public String classe;
-	public int vida;
-	public int mana;
+	public int bonusVida;
+	public int bonusMana;
+	public int ataque;
+	public int defesa;
 	
-	PersonagemEspecs(String classe, int vida, int mana) {
+	PersonagemEspecs(String classe, int bonusVida, int bonusMana, int ataque, int defesa) {
         this.classe = classe;
-        this.vida = vida;
-        this.mana = mana;
+        this.bonusVida = bonusVida;
+        this.bonusMana = bonusMana;
+        this.ataque = ataque;
+        this.defesa = defesa;
     }
 
     public String getClasse() {
         return this.classe;
     }
     
-    public int getVida() {
-        return this.vida;
+    public int getBonusVida() {
+        return this.bonusVida;
     }
     
-    public int getMana() {
-        return this.mana;
+    public int getBonusMana() {
+        return this.bonusMana;
+    }
+    
+    public int getAtaque() {
+    	return this.ataque;
+    }
+    
+    public int getDefesa() {
+    	return this.defesa;
     }
 	
 }
